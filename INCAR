@@ -1,0 +1,47 @@
+SYSTEM=Ta144
+
+Start parameters for this run:
+  NWRITE =      1;  LPETIM=.FALSE.   !write-flag&timer
+  ISTART =      0   !job: 0-new  1-cont  2-samecut
+  ISMEAR =      1
+  SIGMA  =    0.2
+NPAR = 2
+
+Electronic Relaxation 1
+  ENCUT  =  250
+  NELM   =  200    !max num for electronic SC steps
+  NELMIN =  4      !min num for electronic SC steps
+  EDIFF  =  1E-05  !stopping-criterion for ELM
+  BMIX   =  2.00   !cutoff wave vector for Kerker mixing scheme ???
+
+Ionic Relaxation
+  NSW    =      1  !number of steps for IOM
+  NBLOCK =      1; KBLOCK =  100  !inner block; outer block
+  ISYM   =      0
+  IWAVPR =      12
+  LCORR  =      .TRUE.  !Harris-correction to forces
+  EDIFFG =      1E-5
+  PSTRESS =     300
+
+Molecular Dynamics Related 
+  IBRION =      0  !ionic relax: 0-MD 1-quasi-new 2-CG
+  ISIF   =      3  !stress and relaxation
+  TEBEG  =      300
+  TEEND  =      3500 
+  POTIM  =      2.0
+  MDALGO =      3
+  PMASS = 200      !!!! auto generated variable
+  LANGEVIN_GAMMA = 20      !!!! auto generated variable
+  LANGEVIN_GAMMA_L = 10      !!!! auto generated variable
+  LBLUEOUT =   .TRUE. !write the output for the free-energy gradient calculation
+  
+Electronic Relaxation 2
+
+  ALGO   =        Very_Fast
+  LDIAG  =        .TRUE.    !sub-space diagonalisation
+  LREAL  =        Auto    !real-space projection
+
+ LELF     =      .FALSE.
+ PREC     =       Normal
+ LWAVE    =      .FALSE.   !write the wavefunction at the last run? 
+ LCHARG   =      .FALSE.    !write the charge density? 

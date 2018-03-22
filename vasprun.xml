@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<modeling>
+ <generator>
+  <i name="program" type="string">vasp </i>
+  <i name="version" type="string">5.4.1  </i>
+  <i name="subversion" type="string">05Feb16 (build Mar 22 2018 17:28:22) complex                          parallel </i>
+  <i name="platform" type="string">IFC91_ompi </i>
+  <i name="date" type="string">2018 03 22 </i>
+  <i name="time" type="string">18:56:28 </i>
+ </generator>
+ <incar>
+  <i type="string" name="SYSTEM">Ta144</i>
+  <i type="int" name="ISTART">     0</i>
+  <i type="string" name="PREC">normal</i>
+  <i type="string" name="ALGO">        Very_Fast</i>
+  <i type="logical" name="LDIAG"> T  </i>
+  <i name="BMIX">      2.00000000</i>
+  <i type="int" name="NELM">   200</i>
+  <i type="int" name="NELMIN">     4</i>
+  <i type="int" name="IBRION">     0</i>
+  <i name="EDIFF">      0.00001000</i>
+  <i name="EDIFFG">      0.00001000</i>
+  <i type="int" name="NSW">     1</i>
+  <i type="int" name="ISIF">     3</i>
+  <i type="int" name="IWAVPR">    12</i>
+  <i type="int" name="ISYM">     0</i>
+  <i type="int" name="NBLOCK">     1</i>
+  <i type="int" name="KBLOCK">   100</i>
+  <i name="ENCUT">    250.00000000</i>
